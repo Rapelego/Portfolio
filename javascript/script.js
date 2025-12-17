@@ -1,25 +1,40 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const toggleBtn = document.getElementById("darkToggle");
+  const darkToggle = document.getElementById("darkToggle");
+  const menuToggle = document.getElementById("menuToggle");
+  const navLinks = document.getElementById("navLinks");
 
-    // Load saved mode
-    const savedMode = localStorage.getItem("mode");
+  /* -------------------------------
+     DARK MODE (WITH MEMORY)
+  -------------------------------- */
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    document.body.classList.add("dark-mode");
+    darkToggle.innerHTML = "☀️";
+  }
 
-    if (savedMode === "dark") {
-        document.body.classList.add("dark-mode");
-        toggleBtn.textContent = "☀️";
+  darkToggle.addEventListener("click", () => {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+      darkToggle.innerHTML = "☀️";
+      localStorage.setItem("theme", "dark");
     } else {
-        toggleBtn.textContent = "🌙";
+      darkToggle.innerHTML = "🌙";
+      localStorage.setItem("theme", "light");
     }
+  });
 
-    // Switch mode
-    toggleBtn.addEventListener("click", () => {
-        document.body.classList.toggle("dark-mode");
+  /* -------------------------------
+     MOBILE MENU
+  -------------------------------- */
+  menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("show");
+  });
 
-        const isDark = document.body.classList.contains("dark-mode");
-
-        toggleBtn.textContent = isDark ? "☀️" : "🌙";
-
-        // Save preference
-        localStorage.setItem("mode", isDark ? "dark" : "light");
+  // Close menu when clicking a link
+  document.querySelectorAll(".nav-links a").forEach(link => {
+    link.addEventListener("click", () => {
+      navLinks.classList.remove("show");
     });
+  });
 });
