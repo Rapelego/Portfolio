@@ -1,138 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Lethabo | Software & Mobile Developer</title>
+    <title>Lethabo | Software & Mobile Developer</title>
 
-<meta name="description" content="Portfolio of Lethabo — Junior Software & Mobile App Developer skilled in Kotlin, Jetpack Compose, JavaScript, React, HTML and CSS.">
+    <meta
+      name="description"
+      content="Portfolio of Lethabo — Junior Software & Mobile App Developer skilled in Kotlin, Jetpack Compose, JavaScript, React, HTML and CSS."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="stylesheet/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
 
-<link rel="stylesheet" href="stylesheet/style.css">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
-</head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <h1 class="logo">EaziiTech</h1>
 
-<body>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-<header>
-  <nav class="navbar">
-    <h1 class="logo">EaziiTech</h1>
+        <div class="nav-actions">
+          <button id="darkToggle"><i class="ri-moon-line"></i></button>
+          <button id="menuToggle" class="menu-toggle">
+            <i class="ri-menu-line"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
 
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <section class="hero">
+      <h2>Hello, I'm <span>Lethabo</span></h2>
+      <p>
+        Junior Software & Mobile App Developer building modern web and Android
+        applications.
+      </p>
+      <a href="#projects" class="btn-primary">View Projects</a>
+    </section>
 
-    <div class="nav-actions">
-      <button id="darkToggle"><i class="ri-moon-line"></i></button>
-      <button id="menuToggle" class="menu-toggle"><i class="ri-menu-line"></i></button>
-    </div>
-  </nav>
-</header>
+    <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>
+        I hold a Higher Certificate in Mobile Application & Web Development from
+        Rosebank College (2025). I specialize in Android development using
+        Kotlin & Jetpack Compose and modern web development using HTML, CSS,
+        JavaScript and React.
+      </p>
+    </section>
 
-<section class="hero">
-  <h2>Hello, I'm <span>Lethabo</span></h2>
-  <p>Junior Software & Mobile App Developer building modern web and Android applications.</p>
-  <a href="#projects" class="btn-primary">View Projects</a>
-</section>
+    <section id="projects" class="projects">
+      <h2>Projects</h2>
 
-<section id="about" class="about">
-  <h2>About Me</h2>
-  <p>
-    I hold a Higher Certificate in Mobile Application & Web Development from Rosebank College (2025).
-    I specialize in Android development using Kotlin & Jetpack Compose and modern web development using
-    HTML, CSS, JavaScript and React.
-  </p>
-</section>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="img/Empowering.jpg" alt="Empowering the Nation" />
+          <h3>Empowering The Nation</h3>
+          <p>Training business website with course selection & discounts.</p>
+          <a
+            href="https://rapelego.github.io/EmpoweringTheNation/"
+            target="_blank"
+            class="btn-secondary"
+            >Live Demo</a
+          >
+          <a
+            href="https://github.com/Rapelego/EmpoweringTheNation"
+            target="_blank"
+            class="btn-outline"
+            >GitHub</a
+          >
+        </div>
 
-<section id="projects" class="projects">
-  <h2>Projects</h2>
+        <div class="project-card">
+          <img src="img/Christoffel.png" alt="Restaurant App" />
+          <h3>Restaurant Menu App</h3>
+          <p>React Native UI for restaurant ordering.</p>
+          <a href="#" class="btn-secondary">Live Demo</a>
+          <a
+            href="https://github.com/Rapelego/Restaurant_Menu_App"
+            target="_blank"
+            class="btn-outline"
+            >GitHub</a
+          >
+        </div>
 
-  <div class="project-grid">
+        <div class="project-card">
+          <img src="img/logo_BF.png" alt="Bright Future" />
+          <h3>Bright Future School</h3>
+          <p>Responsive educational website.</p>
+          <a
+            href="https://rapelego.github.io/ngoweb/"
+            target="_blank"
+            class="btn-secondary"
+            >Live Demo</a
+          >
+          <a
+            href="https://github.com/Rapelego/ngoweb"
+            target="_blank"
+            class="btn-outline"
+            >GitHub</a
+          >
+        </div>
 
-    <div class="project-card">
-      <img src="img/Empowering.jpg" alt="Empowering the Nation">
-      <h3>Empowering The Nation</h3>
-      <p>Training business website with course selection & discounts.</p>
-      <a href="https://rapelego.github.io/EmpoweringTheNation/" target="_blank" class="btn-secondary">Live Demo</a>
-      <a href="https://github.com/Rapelego/EmpoweringTheNation" target="_blank" class="btn-outline">GitHub</a>
-    </div>
+        <div class="project-card">
+          <img src="img/Flashcard.png" alt="Flashcard App" />
+          <h3>Flashcard App</h3>
+          <p>Android study app using arrays & multiple screens.</p>
+          <a
+            href="https://github.com/Rapelego/FlashCard"
+            target="_blank"
+            class="btn-outline"
+            >GitHub</a
+          >
+        </div>
 
-    <div class="project-card">
-      <img src="img/Christoffel.png" alt="Restaurant App">
-      <h3>Restaurant Menu App</h3>
-      <p>React Native UI for restaurant ordering.</p>
-      <a href="#" class="btn-secondary">Live Demo</a>
-      <a href="https://github.com/Rapelego/Restaurant_Menu_App" target="_blank" class="btn-outline">GitHub</a>
-    </div>
+        <div class="project-card">
+          <img src="assets/meal.png" alt="Meal App" />
+          <h3>Meal Suggestion App</h3>
+          <p>Random meal generator Android app.</p>
+          <a
+            href="https://github.com/Rapelego/Meal-Suggestion"
+            target="_blank"
+            class="btn-outline"
+            >GitHub</a
+          >
+        </div>
 
-    <div class="project-card">
-      <img src="img/logo_BF.png" alt="Bright Future">
-      <h3>Bright Future School</h3>
-      <p>Responsive educational website.</p>
-      <a href="https://rapelego.github.io/ngoweb/" target="_blank" class="btn-secondary">Live Demo</a>
-      <a href="https://github.com/Rapelego/ngoweb" target="_blank" class="btn-outline">GitHub</a>
-    </div>
+        <div class="project-card">
+          <img src="img/Bakery.png" alt="Bakery Website" />
+          <h3>Bakery Website</h3>
+          <p>Static HTML bakery website.</p>
+          <a
+            href="https://github.com/Rapelego/bakeryweb"
+            target="_blank"
+            class="btn-outline"
+            >GitHub</a
+          >
+        </div>
+      </div>
+    </section>
 
-    <div class="project-card">
-      <img src="img/Flashcard.png" alt="Flashcard App">
-      <h3>Flashcard App</h3>
-      <p>Android study app using arrays & multiple screens.</p>
-      <a href="https://github.com/Rapelego/FlashCard" target="_blank" class="btn-outline">GitHub</a>
-    </div>
+    <section id="skills" class="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>Kotlin • Jetpack Compose • Android Studio</li>
+        <li>JavaScript • React • TypeScript</li>
+        <li>HTML • CSS • Responsive Design</li>
+        <li>Git & GitHub • Figma</li>
+      </ul>
+    </section>
 
-    <div class="project-card">
-      <img src="assets/meal.png" alt="Meal App">
-      <h3>Meal Suggestion App</h3>
-      <p>Random meal generator Android app.</p>
-      <a href="https://github.com/Rapelego/Meal-Suggestion" target="_blank" class="btn-outline">GitHub</a>
-    </div>
+    <section id="contact" class="contact">
+      <h2>Contact</h2>
+      <p>
+        Email:
+        <a href="mailto:maditsirapelego@gmail.com">maditsirapelego@gmail.com</a>
+      </p>
 
-    <div class="project-card">
-      <img src="img/Bakery.png" alt="Bakery Website">
-      <h3>Bakery Website</h3>
-      <p>Static HTML bakery website.</p>
-      <a href="https://github.com/Rapelego/bakeryweb" target="_blank" class="btn-outline">GitHub</a>
-    </div>
+      <div class="social-links">
+        <a
+          href="https://github.com/Rapelego"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="ri-github-fill"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="ri-linkedin-box-fill"></i
+        ></a>
+      </div>
+      <a
+        href="https://wa.me/27837822931?text=Hello%20Lethabo,%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20work%20with%20you."
+        class="whatsapp-float"
+        target="_blank"
+        aria-label="Chat on WhatsApp"
+      >
+        <i class="ri-whatsapp-line"></i>
+      </a>
+    </section>
 
-  </div>
-</section>
+    <footer>© 2025 EaziiTech Solutions</footer>
 
-<section id="skills" class="skills">
-  <h2>Skills</h2>
-  <ul>
-    <li>Kotlin • Jetpack Compose • Android Studio</li>
-    <li>JavaScript • React • TypeScript</li>
-    <li>HTML • CSS • Responsive Design</li>
-    <li>Git & GitHub • Figma</li>
-  </ul>
-</section>
-
-<section id="contact" class="contact">
-  <h2>Contact</h2>
-  <p>Email: <a href="mailto:maditsirapelego@gmail.com">maditsirapelego@gmail.com</a></p>
-
-  <div class="social-links">
-    <a href="https://github.com/Rapelego" target="_blank"><i class="ri-github-fill"></i></a>
-    <a href="https://www.linkedin.com" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
-  </div>
-  <a
-  href="https://wa.me/27837822931?text=Hello%20Lethabo,%20I%20viewed%20your%20portfolio%20and%20would%20like%20to%20work%20with%20you."
-  class="whatsapp-float"
-  target="_blank"
-  aria-label="Chat on WhatsApp"
->
-  <i class="ri-whatsapp-line"></i>
-</a>
-
-</section>
-
-<footer>
-  © 2025 EaziiTech Solutions
-</footer>
-
-<script src="javascript/script.js"></script>
-</body>
+    <script src="javascript/script.js"></script>
+  </body>
 </html>
